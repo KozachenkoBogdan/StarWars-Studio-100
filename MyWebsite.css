@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+.iogo span{
+    margin: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+}
+.header{
+    background-color: coral;
+    height: 200px;
+    position: relative;
+}
+
+.menu{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: darkturquoise;
+    border-bottom: darkturquoise;
+    padding:-2px 0 ; 
+}
+
+.menu a{
+    color: darkturquoise;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    color: darkgoldenrod;
+    background-color: darkblue;
+}
+
+.menu .current{
+    font-weight: bold;
+    color: darkorange;
+    background-color: darkblue;
+}
+
+/*Main*/
+.main{
+    background-color: teal;
+    height: 7000px;
+}
+
+.leftsidebar{
+    background-color: mediumvioletred;
+    height: 100%;
+    width: 15%;
+
+    float: left;
+}
+
+.sidemenu{
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top:20px;
+}
+
+.sidemenu a{
+    font-size: 2em;
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.content{
+    background-color:#dbffcc;
+    height: 100%;
+    width: 75%;
+    float: left;
+
+    font-size:2em;
+
+    padding: 40px;
+    box-sizing: border-box;
+
+    border-right: 3px solid aquamarine;
+    border-left: 3px solid aquamarine;
+}
+
+.content ul li img{
+    transition-duration:2s ;
+    width:1000px;
+}
+
+.content ul li:nth-child(1) img:hover{
+    filter: blur(10px);
+}
+.content ul li:nth-child(2) img:hover{
+    filter: blughtness(100%);
+}
+
+.content ul li:nth-child(3) img:hover{
+    filter:contrast(60%);
+}
+.content ul li:nth-child(4) img:hover{
+    filter:grayscale(100%);
+}
+.content ul li:nth-child(5) img:hover{
+    filter:hue-rotate(150deg);
+}
+.content ul li:nth-child(6) img:hover{
+    filter:saturate(400%);
+}
+.content ul li:nth-child(7) img:hover{
+    filter:invert(100%);
+}
+
+.content ul li:nth-child(8) img:hover{
+    filter:sepia(100%);
+}
+
+.content ul li:nth-child(9) img:hover{
+    filter:opacity(40%);
+}
+
+.rightsidebar{
+    background-color:#c2feff;
+    height: 100%;
+    width: 10%;
+
+    float: right;
+}
+
+/*Footer*/
+.footer{
+    background-color: seagreen;
+    height: 100px;
+}
